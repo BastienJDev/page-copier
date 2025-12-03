@@ -21,8 +21,9 @@ const HeroSection = () => {
 
         {/* CTA Button */}
         <div className="mb-16 opacity-0 animate-fade-in-up animation-delay-400" style={{ animationFillMode: 'forwards' }}>
-          <Button variant="hero" size="xl">
-            Recevoir mon audit SEO
+          <Button variant="hero" size="xl" className="group relative overflow-hidden">
+            <span className="relative z-10">Recevoir mon audit SEO</span>
+            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out" />
           </Button>
         </div>
 
