@@ -202,21 +202,43 @@
   animation-delay: 0.6s;
 }
 
-/* Animated rotating border */
-@keyframes rotate-border {
-  from {
+/* Animated border for button */
+@keyframes border-rotate {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
 
-.animated-border-rotate {
+.animated-border-wrapper {
+  --border-size: 2px;
+}
+
+.animated-border-container {
+  position: absolute;
+  inset: calc(var(--border-size) * -1);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.animated-border-container::before {
+  content: '';
+  position: absolute;
+  inset: -100%;
   background: conic-gradient(
     from 0deg,
-    hsl(var(--accent)) 0deg 60deg,
-    transparent 60deg 360deg
+    transparent 0deg 300deg,
+    hsl(var(--accent)) 300deg 360deg
   );
-  animation: rotate-border 3s linear infinite;
+  animation: border-rotate 3s linear infinite;
+}
+
+.animated-border-container::after {
+  content: '';
+  position: absolute;
+  inset: var(--border-size);
+  border-radius: 9999px;
+  background: hsl(var(--background));
 }

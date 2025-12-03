@@ -21,15 +21,11 @@ const HeroSection = () => {
 
         {/* CTA Button */}
         <div className="mb-16 opacity-0 animate-fade-in-up animation-delay-400" style={{ animationFillMode: 'forwards' }}>
-          <div className="relative inline-block group">
+          <div className="relative inline-block group animated-border-wrapper">
             {/* Full border (revealed on hover) */}
             <div className="absolute -inset-[2px] rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            {/* Animated border container */}
-            <div className="absolute -inset-[2px] rounded-full overflow-hidden group-hover:opacity-0 transition-opacity duration-300">
-              <div className="absolute inset-[-50%] animated-border-rotate" />
-            </div>
-            {/* Inner mask */}
-            <div className="absolute inset-0 rounded-full bg-background" />
+            {/* Animated border */}
+            <div className="animated-border-container group-hover:opacity-0 transition-opacity duration-300" />
             <Button variant="hero" size="xl" className="relative bg-foreground">
               Recevoir mon audit SEO
             </Button>
