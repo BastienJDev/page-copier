@@ -65,25 +65,24 @@ const PortfolioSection = () => {
 
         {/* Carousel Container */}
         <div className="relative">
-          {/* Navigation Arrows - Outside blue area */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors"
-            aria-label="Projet précédent"
-          >
-            <ChevronLeft className="w-6 h-6 text-foreground" strokeWidth={1.5} />
-          </button>
-
-          <button
-            onClick={nextSlide}
-            className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors"
-            aria-label="Projet suivant"
-          >
-            <ChevronRight className="w-6 h-6 text-foreground" strokeWidth={1.5} />
-          </button>
-
           {/* Blue Background Area */}
-          <div className="mx-8 md:mx-20 bg-gradient-to-br from-[#4A90D9] to-[#5B9FE8] rounded-3xl min-h-[400px] md:min-h-[500px] relative overflow-hidden">
+          <div className="bg-gradient-to-br from-[#4A90D9] to-[#5B9FE8] rounded-3xl min-h-[400px] md:min-h-[500px] relative overflow-hidden">
+            {/* Navigation Arrows - Inside blue area */}
+            <button
+              onClick={prevSlide}
+              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors"
+              aria-label="Projet précédent"
+            >
+              <ChevronLeft className="w-6 h-6 text-foreground" strokeWidth={1.5} />
+            </button>
+
+            <button
+              onClick={nextSlide}
+              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors"
+              aria-label="Projet suivant"
+            >
+              <ChevronRight className="w-6 h-6 text-foreground" strokeWidth={1.5} />
+            </button>
             {/* Decorative background elements */}
             <div className="absolute inset-0 opacity-20">
               <div className="absolute top-20 left-20 text-white/30 text-6xl font-bold">+</div>
