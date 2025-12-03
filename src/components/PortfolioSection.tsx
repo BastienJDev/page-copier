@@ -34,34 +34,36 @@ const PortfolioSection = () => {
   const currentProject = projects[currentIndex];
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section className="py-20 px-6 bg-background" id="realisations" aria-labelledby="portfolio-title">
       <div className="container mx-auto">
         {/* Badge */}
         <div className="flex justify-center mb-8">
           <span className="inline-block px-6 py-2 rounded-full border border-primary/30 text-primary text-sm font-medium">
-            Besoin d'une stratégie de référencement ?
+            Nos réalisations clients
           </span>
         </div>
 
         {/* Title */}
         <div className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-            <span className="text-foreground">Pensée pour Google,</span>
+          <h2 id="portfolio-title" className="text-3xl md:text-4xl lg:text-5xl font-bold">
+            <span className="text-foreground">Des résultats,</span>
             <br />
-            <span className="text-gradient">Conçue pour vous.</span>
+            <span className="text-gradient">Pas des promesses.</span>
           </h2>
         </div>
 
         {/* Subtitle */}
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-          Une méthode sur-mesure qui s'aligne aux exigences de Google et aux objectifs de votre business.
+          Découvrez les projets que nous avons accompagnés vers le succès grâce à notre expertise SEO.
         </p>
 
         {/* Project Title */}
         <div className="text-center mb-6">
-          <span className="text-muted-foreground text-sm">{currentProject.title}</span>
-          <span className="text-muted-foreground text-sm mx-2">-</span>
-          <span className="font-medium text-foreground text-sm">{currentProject.category}</span>
+          <h3 className="text-lg">
+            <span className="text-muted-foreground">{currentProject.title}</span>
+            <span className="text-muted-foreground mx-2">-</span>
+            <span className="font-medium text-foreground">{currentProject.category}</span>
+          </h3>
         </div>
 
         {/* Carousel Container */}
