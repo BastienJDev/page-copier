@@ -7,9 +7,8 @@ const HeroSection = () => {
       <div className="container mx-auto text-center">
         {/* Hero Title */}
         <div className="mb-6 opacity-0 animate-fade-in-up" style={{ animationFillMode: 'forwards' }}>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            <span className="strikethrough text-foreground">Le SEO,</span>
-            <br />
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            <span className="strikethrough text-foreground">Le SEO,</span>{" "}
             <span className="text-gradient">simplement.</span>
           </h1>
         </div>
