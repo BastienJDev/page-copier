@@ -43,22 +43,22 @@ const PortfolioSection = () => {
         </div>
 
         {/* Carousel */}
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-3xl mx-auto">
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-10 w-12 h-12 rounded-full border border-border bg-background flex items-center justify-center hover:bg-muted transition-colors"
+            className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full border border-border bg-background flex items-center justify-center hover:bg-muted transition-colors"
             aria-label="Projet précédent"
           >
-            <ChevronLeft className="w-6 h-6 text-foreground" />
+            <ChevronLeft className="w-5 h-5 text-foreground" />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-10 w-12 h-12 rounded-full border border-border bg-background flex items-center justify-center hover:bg-muted transition-colors"
+            className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full border border-border bg-background flex items-center justify-center hover:bg-muted transition-colors"
             aria-label="Projet suivant"
           >
-            <ChevronRight className="w-6 h-6 text-foreground" />
+            <ChevronRight className="w-5 h-5 text-foreground" />
           </button>
 
           {/* Project Display */}
