@@ -7,28 +7,28 @@ const services = [
     description: "Technique, contenu, structure, concurrence : on part sur des bases solides.",
     icon: ClipboardCheck,
     timeline: "2 semaines",
-    timelineDescription: "Phase d'analyse (création du plan d'action)",
+    timelineDescription: "Phase d'analyse\n(création du plan d'action)",
   },
   {
     title: "Refonte Technique",
     description: "On optimise votre site pour Google : vitesse, balises, accessibilité, indexation.",
     icon: Settings,
     timeline: "30 jours",
-    timelineDescription: "Optimisations de l'interface (fondations SEO)",
+    timelineDescription: "Optimisations de l'interface\n(fondations SEO)",
   },
   {
     title: "Contenu & Mots-clés",
     description: "Stratégie éditoriale avec rédaction optimisée pour un référencement durable.",
     icon: FileText,
     timeline: "le 2e mois",
-    timelineDescription: "Enrichissement de la sémantique On-Page.",
+    timelineDescription: "Enrichissement de la\nsémantique On-Page",
   },
   {
     title: "Netlinking & Growth",
     description: "Création de liens entrants qualitatifs pour asseoir votre notoriété et vos positions.",
     icon: Link,
     timeline: "le 3e mois",
-    timelineDescription: "Backlinks & Croissance organique progressive",
+    timelineDescription: "Backlinks & Croissance\norganique progressive",
   },
 ];
 
@@ -63,7 +63,7 @@ const StrategySection = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className={`relative p-6 flex flex-col ${
+                className={`relative p-6 flex flex-col cursor-pointer transition-all duration-300 hover:bg-primary/5 hover:scale-[1.02] ${
                   index < services.length - 1 ? "lg:border-r border-primary/20" : ""
                 } ${index < 2 ? "md:border-b lg:border-b-0 border-primary/20" : ""}`}
               >
@@ -94,7 +94,7 @@ const StrategySection = () => {
                     <div className="text-primary font-semibold mb-1">
                       {service.timeline}
                     </div>
-                    <p className="text-muted-foreground text-xs">
+                    <p className="text-muted-foreground text-xs whitespace-pre-line">
                       {service.timelineDescription}
                     </p>
                   </div>
