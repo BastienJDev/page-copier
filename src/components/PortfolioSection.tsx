@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const projects = [
   {
@@ -58,9 +59,9 @@ const PortfolioSection = () => {
 
         {/* Project Title */}
         <div className="text-center mb-6">
-          <span className="text-muted-foreground font-medium">{currentProject.title}</span>
-          <span className="text-muted-foreground mx-2">-</span>
-          <span className="font-semibold text-foreground">{currentProject.category}</span>
+          <span className="text-muted-foreground text-sm">{currentProject.title}</span>
+          <span className="text-muted-foreground text-sm mx-2">-</span>
+          <span className="font-medium text-foreground text-sm">{currentProject.category}</span>
         </div>
 
         {/* Carousel Container */}
@@ -196,6 +197,16 @@ const PortfolioSection = () => {
               />
             ))}
           </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center mt-12">
+          <Button 
+            size="xl" 
+            className="bg-[#4A5568] hover:bg-[#3D4654] text-white rounded-full px-10"
+          >
+            Nos accompagnements
+          </Button>
         </div>
       </div>
     </section>
