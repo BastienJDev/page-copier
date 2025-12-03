@@ -3,11 +3,11 @@ import { Play } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="pt-32 pb-16 px-6">
+    <section className="pt-32 pb-16 px-6" aria-labelledby="hero-title">
       <div className="container mx-auto text-center">
         {/* Hero Title */}
         <div className="mb-6 opacity-0 animate-fade-in-up" style={{ animationFillMode: 'forwards' }}>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 id="hero-title" className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             <span className="strikethrough text-gradient">Le SEO,</span>
             <br />
             <span className="text-gradient">simplement.</span>
@@ -23,12 +23,13 @@ const HeroSection = () => {
         <div className="mb-16 opacity-0 animate-fade-in-up animation-delay-400" style={{ animationFillMode: 'forwards' }}>
           <div className="relative inline-block group">
             {/* Full border (revealed on hover) */}
-            <div className="absolute -inset-[2px] rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute -inset-[2px] rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
             {/* Animated border - SVG following pill shape */}
             <svg 
               className="absolute -inset-[2px] w-[calc(100%+4px)] h-[calc(100%+4px)] group-hover:opacity-0 transition-opacity duration-300"
               viewBox="0 0 300 60"
               preserveAspectRatio="none"
+              aria-hidden="true"
             >
               <rect
                 x="2"
@@ -45,27 +46,31 @@ const HeroSection = () => {
                 className="animate-dash-rotate"
               />
             </svg>
-            <Button variant="hero" size="xl" className="relative bg-foreground">
+            <Button variant="hero" size="xl" className="relative bg-foreground" aria-label="Recevoir mon audit SEO gratuit">
               Recevoir mon audit SEO
             </Button>
           </div>
         </div>
 
         {/* Video Section */}
-        <div className="relative max-w-4xl mx-auto opacity-0 animate-fade-in-up animation-delay-600" style={{ animationFillMode: 'forwards' }}>
+        <figure className="relative max-w-4xl mx-auto opacity-0 animate-fade-in-up animation-delay-600" style={{ animationFillMode: 'forwards' }}>
           <div className="relative rounded-2xl overflow-hidden shadow-video">
             {/* Video Thumbnail */}
             <div className="aspect-video relative bg-foreground/95">
               <img 
                 src="/video-thumbnail.jpg" 
-                alt="Easy-Seo Agency présentation vidéo"
+                alt="Présentation vidéo d'Easy-Seo Agency montrant les résultats SEO obtenus pour nos clients"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <button className="w-20 h-20 bg-[#FF0000] rounded-2xl flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group">
-                  <Play className="w-10 h-10 text-white fill-white ml-1 group-hover:scale-110 transition-transform" />
+                <button 
+                  className="w-20 h-20 bg-[#FF0000] rounded-2xl flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group"
+                  aria-label="Lire la vidéo de présentation Easy-Seo sur YouTube"
+                >
+                  <Play className="w-10 h-10 text-white fill-white ml-1 group-hover:scale-110 transition-transform" aria-hidden="true" />
                 </button>
               </div>
 
@@ -145,7 +150,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </figure>
       </div>
     </section>
   );

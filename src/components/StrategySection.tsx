@@ -37,18 +37,18 @@ const StrategySection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section className="py-20 px-6 bg-background" id="services" aria-labelledby="strategy-title">
       <div className="container mx-auto">
         {/* Badge */}
         <div className="flex justify-center mb-8">
           <span className="inline-block px-6 py-2 rounded-full border border-primary/30 text-primary text-sm font-medium">
-            Besoin d'une stratégie de référencement ?
+            Notre méthodologie SEO
           </span>
         </div>
 
         {/* Title */}
         <div className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h2 id="strategy-title" className="text-3xl md:text-4xl lg:text-5xl font-bold">
             <span className="text-foreground">Pensée pour Google,</span>
             <br />
             <span className="text-gradient">Conçue pour vous.</span>
