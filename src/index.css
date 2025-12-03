@@ -124,12 +124,12 @@
   .strikethrough::after {
     content: '';
     position: absolute;
-    left: 0;
-    right: 0;
+    left: -5%;
+    right: -5%;
     top: 50%;
-    height: 4px;
-    background: hsl(var(--coral));
-    transform: rotate(-2deg);
+    height: 3px;
+    background: hsl(var(--primary));
+    transform: translateY(-50%);
     border-radius: 2px;
   }
 }
