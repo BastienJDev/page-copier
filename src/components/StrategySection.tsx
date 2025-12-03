@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ClipboardCheck, Settings, FileText, Link } from "lucide-react";
+import { useState } from "react";
 
 const services = [
   {
@@ -33,6 +34,8 @@ const services = [
 ];
 
 const StrategySection = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <section className="py-20 px-6 bg-background">
       <div className="container mx-auto">
@@ -59,14 +62,24 @@ const StrategySection = () => {
 
         {/* Services Grid */}
         <div className="relative max-w-5xl mx-auto mb-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-primary/20 rounded-2xl overflow-hidden">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className={`relative p-6 flex flex-col cursor-pointer transition-all duration-300 hover:bg-primary/5 hover:scale-[1.02] ${
-                  index < services.length - 1 ? "lg:border-r border-primary/20" : ""
-                } ${index < 2 ? "md:border-b lg:border-b-0 border-primary/20" : ""}`}
-              >
+          <div 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-primary/20 rounded-2xl overflow-hidden"
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            {services.map((service, index) => {
+              const isHovered = hoveredIndex === index;
+              const hasHover = hoveredIndex !== null;
+              
+              return (
+                <div
+                  key={index}
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  className={`relative p-6 flex flex-col cursor-pointer transition-all duration-300 ${
+                    isHovered ? "bg-primary/5 scale-105 z-10" : hasHover ? "scale-95 opacity-70" : ""
+                  } ${
+                    index < services.length - 1 ? "lg:border-r border-primary/20" : ""
+                  } ${index < 2 ? "md:border-b lg:border-b-0 border-primary/20" : ""}`}
+                >
                 {/* Service Content */}
                 <div className="flex-1 text-center mb-8">
                   <h3 className="text-primary font-semibold text-lg mb-3 italic">
@@ -100,7 +113,8 @@ const StrategySection = () => {
                   </div>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
