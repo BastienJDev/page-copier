@@ -212,13 +212,12 @@
   }
 }
 
-.animated-border {
+.animated-border-rotate {
   background: conic-gradient(
     from 0deg,
     hsl(var(--primary)) 0deg,
-    hsl(var(--primary)) 90deg,
-    transparent 90deg,
-    transparent 360deg
+    hsl(var(--primary)) 60deg,
+    transparent 120deg
   );
   animation: rotate-border 2s linear infinite;
 }
