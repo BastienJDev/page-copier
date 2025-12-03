@@ -100,7 +100,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="bg-[#1A2535] py-6">
+      <div className="bg-[#1E2A3B] py-6">
         <div className="container mx-auto px-6">
           {/* Payment Icons */}
           <div className="flex items-center justify-center gap-2 mb-4">
