@@ -2,7 +2,7 @@ import { Facebook, Instagram, Youtube, Star } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1E293B]">
+    <footer className="bg-[#1E2A3B]">
       {/* Main Footer */}
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
@@ -100,7 +100,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="bg-[#0F172A] py-6">
+      <div className="bg-[#1A2535] py-6">
         <div className="container mx-auto px-6">
           {/* Payment Icons */}
           <div className="flex items-center justify-center gap-2 mb-4">
