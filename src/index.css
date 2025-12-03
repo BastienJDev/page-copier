@@ -216,14 +216,8 @@
   background: conic-gradient(
     from 0deg,
     hsl(var(--accent)) 0deg,
-    hsl(var(--accent)) 60deg,
-    transparent 120deg
+    hsl(var(--accent)) 90deg,
+    transparent 180deg
   );
-  animation: rotate-border 4s linear infinite;
-}
-
-.animated-border-full {
-  background: hsl(var(--accent)) !important;
-  animation: none !important;
-  transition: background 0.3s ease;
+  animation: rotate-border 3s linear infinite;
 }
