@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Plus } from "lucide-react";
 
 const faqs = [
   {
@@ -63,7 +64,7 @@ const FAQSection = () => {
         </p>
 
         {/* FAQ Accordion */}
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto relative">
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
             <Accordion type="single" collapsible className="space-y-2">
               {faqs.map((faq, index) => (
@@ -86,6 +87,11 @@ const FAQSection = () => {
               ))}
             </Accordion>
           </div>
+          
+          {/* Plus Button */}
+          <button className="absolute -bottom-6 right-0 w-14 h-14 rounded-xl border border-gray-200 bg-white shadow-sm flex items-center justify-center hover:bg-gray-50 transition-colors">
+            <Plus className="w-6 h-6 text-gray-400" />
+          </button>
         </div>
       </div>
     </section>
