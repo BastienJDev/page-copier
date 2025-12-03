@@ -1,10 +1,11 @@
+import { useState } from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Plus } from "lucide-react";
+import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
@@ -39,6 +40,8 @@ const faqs = [
 ];
 
 const FAQSection = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <section className="py-20 px-6 bg-background">
       <div className="container mx-auto">
@@ -88,11 +91,60 @@ const FAQSection = () => {
             </Accordion>
           </div>
           
-          {/* Plus Button */}
-          <button className="absolute -bottom-10 -right-24 w-14 h-14 rounded-xl border border-gray-200 bg-white shadow-sm flex items-center justify-center hover:bg-gray-50 transition-colors">
-            <Plus className="w-6 h-6 text-gray-400" />
+          {/* Plus/Minus Button */}
+          <button 
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="absolute -bottom-10 -right-24 w-14 h-14 rounded-xl border border-gray-200 bg-white shadow-sm flex items-center justify-center hover:bg-gray-50 transition-colors"
+          >
+            {isExpanded ? (
+              <Minus className="w-6 h-6 text-gray-400" />
+            ) : (
+              <Plus className="w-6 h-6 text-gray-400" />
+            )}
           </button>
         </div>
+
+        {/* Expanded Content */}
+        {isExpanded && (
+          <div className="max-w-4xl mx-auto mt-20 space-y-12 animate-fade-in">
+            {/* Section 1 */}
+            <div className="bg-slate-50 rounded-2xl p-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Agence de développement d'applications Web et Mobile en France
+              </h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Les applications mobiles ont révolutionné notre interaction en ligne. Aujourd'hui, les entreprises leaders à travers le monde ont développé des applications mobiles dédiées. Une application mobile au design soigné, dotée de fonctionnalités personnalisées et intuitives, peut s'avérer un atout majeur pour votre <a href="#" className="text-primary underline">croissance</a>. <strong className="text-foreground">Easyweb</strong>, votre partenaire expert en développement d'applications mobiles en France, met son savoir-faire au service de la complexité du monde mobile pour vous offrir des solutions sur mesure, adaptées précisément à vos besoins. Depuis nos débuts, nous nous sommes affirmés comme une agence de développement d'applications mobiles de référence en France.
+                </p>
+                <p>
+                  Notre succès repose sur une analyse approfondie, une approche technologique centrée sur le client et une soif constante d'innovation, nous propulsant au rang des acteurs majeurs du développement d'applications mobiles. Figurant parmi les meilleures entreprises de logiciels en France, nous nous engageons à intégrer les dernières avancées technologiques pour vous fournir des <a href="#" className="text-primary underline">solutions logicielles</a> complètes. Notre agence propose à ses clients des produits de haute qualité et des services d'excellence dans le <a href="#" className="text-primary underline">développement d'applications</a> Android et iOS, la création d'applications e-commerce, le développement <a href="#" className="text-primary underline">d'applications de réseaux sociaux</a>, et bien plus encore. En tant qu'agence web innovante en France, <strong className="text-foreground">Easyweb</strong> conçoit des sites web robustes et intuitifs qui offrent une expérience utilisateur unique.
+                </p>
+              </div>
+            </div>
+
+            {/* Section 2 */}
+            <div className="bg-slate-50 rounded-2xl p-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Mettre en place une stratégie de marketing digital efficace
+              </h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Mettre en place une stratégie de marketing digital efficace, c'est avant tout partir de vos objectifs réels : visibilité, acquisition, notoriété, conversion ou fidélisation. Il ne s'agit pas d'empiler des actions au hasard, mais de structurer un plan clair, avec les bons canaux, les bons messages et les bons outils. SEO, publicité en ligne, contenu, réseaux sociaux, emailing, automatisation : chaque levier, de la <a href="#" className="text-primary underline">prospection LinkedIn</a> à la <a href="#" className="text-primary underline">gestion de campagne Google Ads</a>, a un rôle précis à jouer. Chez Easyweb, on commence toujours par une phase d'analyse : votre audience, votre positionnement, vos concurrents et vos ressources. Ensuite, on construit une stratégie qui colle à vos moyens et qui sert votre croissance. L'enjeu n'est pas de tout faire, mais de faire ce qui fonctionne, de façon régulière et mesurable.
+                </p>
+                
+                <h4 className="text-xl font-bold text-foreground mt-8 mb-4">
+                  Le rôle du marketing digital dans l'acquisition de clients
+                </h4>
+                <p>
+                  Le marketing digital joue un rôle central dans l'acquisition de clients. Il permet de capter l'attention au bon moment, sur les bons canaux, avec un message adapté à chaque étape du parcours. Contrairement aux approches classiques, il offre une capacité de ciblage fine et un suivi précis des performances. SEO, SEA, réseaux sociaux, emailing, contenu : chaque levier, qu'il s'agisse de <a href="#" className="text-primary underline">branding</a>, de <a href="#" className="text-primary underline">consulting SEO</a> ou de <a href="#" className="text-primary underline">prospection BtoB</a>, peut être activé pour attirer des prospects qualifiés.
+                </p>
+                <p>
+                  Chez Easyweb, on ne cherche pas à "faire du digital" pour cocher une case. On conçoit des actions marketing qui servent directement votre acquisition. Cela passe par une bonne compréhension de votre audience, des outils adaptés à vos cycles de vente, et une méthode claire pour transformer le trafic en résultats mesurables. L'acquisition ne se joue pas sur un coup, mais sur une stratégie bien structurée.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
