@@ -75,7 +75,7 @@ const TestimonialsSection = () => {
       </div>
 
       {/* CTA Button */}
-      <div className="text-center mt-12">
+      <div className="text-center mt-20">
         <Button 
           variant="outline" 
           size="xl" 
