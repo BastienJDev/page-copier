@@ -7,6 +7,8 @@ import PortfolioSection from "@/components/PortfolioSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import FAQSection from "@/components/FAQSection";
+import TrustpilotSection from "@/components/TrustpilotSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -21,7 +23,9 @@ const Index = () => {
         <PortfolioSection />
         <WhyChooseSection />
         <FAQSection />
+        <TrustpilotSection />
       </main>
+      <Footer />
     </div>
   );
 };
