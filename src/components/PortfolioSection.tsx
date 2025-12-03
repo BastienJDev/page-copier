@@ -35,6 +35,27 @@ const PortfolioSection = () => {
   return (
     <section className="py-20 px-6 bg-background">
       <div className="container mx-auto">
+        {/* Badge */}
+        <div className="flex justify-center mb-8">
+          <span className="inline-block px-6 py-2 rounded-full border border-primary/30 text-primary text-sm font-medium">
+            Besoin d'une stratégie de référencement ?
+          </span>
+        </div>
+
+        {/* Title */}
+        <div className="text-center mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+            <span className="text-foreground">Pensée pour Google,</span>
+            <br />
+            <span className="text-gradient">Conçue pour vous.</span>
+          </h2>
+        </div>
+
+        {/* Subtitle */}
+        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
+          Une méthode sur-mesure qui s'aligne aux exigences de Google et aux objectifs de votre business.
+        </p>
+
         {/* Project Title */}
         <div className="text-center mb-6">
           <span className="text-muted-foreground font-medium">{currentProject.title}</span>
