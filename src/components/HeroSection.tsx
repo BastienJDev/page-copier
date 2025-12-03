@@ -21,10 +21,13 @@ const HeroSection = () => {
 
         {/* CTA Button */}
         <div className="mb-16 opacity-0 animate-fade-in-up animation-delay-400" style={{ animationFillMode: 'forwards' }}>
-          <Button variant="hero" size="xl" className="group relative overflow-hidden">
-            <span className="relative z-10">Recevoir mon audit SEO</span>
-            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out" />
-          </Button>
+          <div className="relative inline-block group">
+            {/* Animated border */}
+            <div className="absolute -inset-[2px] rounded-full animated-border group-hover:animated-border-full" />
+            <Button variant="hero" size="xl" className="relative bg-foreground">
+              Recevoir mon audit SEO
+            </Button>
+          </div>
         </div>
 
         {/* Video Section */}
