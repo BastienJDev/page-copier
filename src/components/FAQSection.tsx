@@ -89,7 +89,7 @@ const FAQSection = () => {
           </div>
           
           {/* Plus Button */}
-          <button className="absolute -bottom-10 -right-16 w-14 h-14 rounded-xl border border-gray-200 bg-white shadow-sm flex items-center justify-center hover:bg-gray-50 transition-colors">
+          <button className="absolute -bottom-10 -right-24 w-14 h-14 rounded-xl border border-gray-200 bg-white shadow-sm flex items-center justify-center hover:bg-gray-50 transition-colors">
             <Plus className="w-6 h-6 text-gray-400" />
           </button>
         </div>
