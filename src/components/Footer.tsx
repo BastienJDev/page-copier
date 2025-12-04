@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Star } from "lucide-react";
+import { Facebook, Instagram, Youtube, Star, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -94,6 +94,14 @@ const Footer = () => {
             </a>
             <a href="#" className="text-white hover:text-gray-300 transition-colors" aria-label="Suivez Easy-Seo sur YouTube" rel="noopener noreferrer">
               <Youtube className="w-6 h-6" aria-hidden="true" />
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 transition-colors" aria-label="Suivez Easy-Seo sur LinkedIn" rel="noopener noreferrer">
+              <Linkedin className="w-6 h-6" aria-hidden="true" />
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 transition-colors" aria-label="Suivez Easy-Seo sur Notion" rel="noopener noreferrer">
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 2.02c-.42-.326-.98-.7-2.054-.607L3.01 2.687c-.467.047-.56.28-.374.466l1.823 1.055zM5.253 7.19v13.661c0 .747.373 1.027 1.213.98l14.523-.84c.84-.046.933-.56.933-1.166V6.396c0-.606-.233-.933-.746-.886l-15.177.886c-.56.047-.746.327-.746.794zm14.336.84c.094.42 0 .84-.42.886l-.7.14v10.264c-.607.327-1.166.514-1.633.514-.746 0-.933-.234-1.493-.933l-4.572-7.186v6.952l1.446.327s0 .84-1.166.84l-3.22.186c-.093-.186 0-.653.327-.746l.84-.233V9.163l-1.166-.093c-.094-.42.14-1.026.793-1.073l3.453-.233 4.759 7.279V8.357l-1.213-.14c-.094-.514.28-.886.746-.933l3.219-.187zM2.667 1.267L16.346.08c1.68-.14 2.1.047 2.8.56l3.86 2.707c.467.327.606.42.606.98v15.176c0 .606-.18 1.073-.793 1.12l-15.503.933c-.467.027-.7-.047-1.167-.653l-1.54-1.68c-.42-.466-.606-.84-.606-1.306V2.247c0-.607.14-1.12.607-1.12l-.143.14z"/>
+              </svg>
             </a>
           </nav>
         </div>
