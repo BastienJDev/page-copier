@@ -13,13 +13,13 @@ const Header = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-12" role="navigation">
-            <a href="#services" className="text-[#3898ec] font-exo font-extrabold text-lg hover:text-[#3898ec]/80 transition-colors">
+            <a href="#services" className="text-gradient-nav font-exo font-extrabold text-lg hover:opacity-80 transition-opacity">
               Services
             </a>
-            <a href="#realisations" className="text-[#3898ec] font-exo font-extrabold text-lg hover:text-[#3898ec]/80 transition-colors">
+            <a href="#realisations" className="text-gradient-nav font-exo font-extrabold text-lg hover:opacity-80 transition-opacity">
               Réalisations
             </a>
-            <a href="#recrutement" className="text-[#3898ec] font-exo font-extrabold text-lg hover:text-[#3898ec]/80 transition-colors">
+            <a href="#recrutement" className="text-gradient-nav font-exo font-extrabold text-lg hover:opacity-80 transition-opacity">
               Recrutement
             </a>
           </div>
