@@ -67,14 +67,14 @@ const AnimatedNumber = ({ prefix, value, suffix, duration = 2000 }: { prefix: st
 
 const StatsSection = () => {
   return (
-    <section className="bg-blue-section py-16" aria-label="Statistiques de performance SEO">
+    <section className="bg-blue-section py-10" aria-label="Statistiques de performance SEO">
       <div className="container mx-auto px-6">
         <h2 className="sr-only">Nos résultats SEO en chiffres</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <article key={index} className="text-center">
               <AnimatedNumber prefix={stat.prefix} value={stat.value} suffix={stat.suffix} />
-              <p className="text-primary-foreground/80 text-lg">
+              <p className="text-primary-foreground/80 text-lg font-bold">
                 {stat.label}
               </p>
             </article>
