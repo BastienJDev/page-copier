@@ -8,7 +8,7 @@ const HeroSection = () => {
         {/* Hero Title */}
         <div className="mb-6 opacity-0 animate-fade-in-up" style={{ animationFillMode: 'forwards' }}>
           <h1 id="hero-title" className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            <span className="strikethrough text-gradient font-exo font-semibold text-[60px]">Le SEO,</span>
+            <span className="text-gradient font-exo font-semibold text-[60px]">Le SEO,</span>
             <br />
             <span className="text-gradient font-peace-sans font-normal">simplement.</span>
           </h1>
