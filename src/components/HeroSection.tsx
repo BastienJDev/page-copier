@@ -36,13 +36,16 @@ const HeroSection = () => {
         {/* Video Section */}
         <figure className="relative max-w-4xl mx-auto opacity-0 animate-fade-in-up animation-delay-600" style={{ animationFillMode: 'forwards' }}>
           <div className="relative rounded-2xl overflow-hidden shadow-video">
-            {/* Video Thumbnail */}
+            {/* Video Section */}
             <div className="aspect-video relative bg-foreground/95">
-              <img 
-                src="/video-thumbnail.jpg" 
-                alt="Présentation vidéo d'Easy-Seo Agency montrant les résultats SEO obtenus pour nos clients"
+              {/* Pour utiliser une vidéo: placez votre fichier vidéo dans /public/ et changez le src ci-dessous */}
+              <video 
+                src="/video-presentation.mp4"
+                poster="/video-thumbnail.jpg"
                 className="w-full h-full object-cover"
-                loading="lazy"
+                muted
+                loop
+                playsInline
               />
               
               {/* Play Button Overlay */}
