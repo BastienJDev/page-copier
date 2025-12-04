@@ -46,7 +46,7 @@ const HeroSection = () => {
                 className="animate-dash-rotate"
               />
             </svg>
-            <Button variant="hero" size="xl" className="relative bg-foreground" aria-label="Recevoir mon audit SEO gratuit">
+            <Button variant="hero" size="xl" className="relative" aria-label="Recevoir mon audit SEO gratuit">
               Recevoir mon audit SEO
             </Button>
           </div>
