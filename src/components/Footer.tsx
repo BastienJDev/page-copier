@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-5">
-            <img src={logoEasySeoWhite} alt="Easy-Seo Agency" className="h-12 mb-2" />
+            <img src={logoEasySeoWhite} alt="Easy-Seo Agency" className="h-16 mb-2" />
             <p className="text-gray-300 text-base leading-relaxed mt-6">
               Easy-SEO Agency vous accompagne avec des services sur mesure tels que le{" "}
               <a href="#" className="underline hover:text-white">référencement sur Google</a>, ou sur les{" "}
