@@ -34,17 +34,15 @@ const testimonials = [
   },
 ];
 
-const TestimonialCard = ({ title, text, author, showAuthor = false }: { title: string; text: string; author: string; showAuthor?: boolean }) => (
-  <div className="bg-gray-200 rounded-xl p-6 min-w-[320px] max-w-[380px] mx-3 flex-shrink-0">
-    <h3 className="text-primary font-bold text-lg mb-3 text-center">{title}</h3>
-    <p className="text-foreground/80 text-sm text-center leading-relaxed">{text}</p>
-    {showAuthor && (
-      <div className="flex items-center gap-2 mt-4">
-        <div className="w-8 h-8 rounded-full bg-blue-dark" />
-        <span className="text-primary font-medium text-sm">{author}</span>
-        <ExternalLink className="w-4 h-4 text-muted-foreground" />
-      </div>
-    )}
+const TestimonialCard = ({ title, text, author }: { title: string; text: string; author: string }) => (
+  <div className="group bg-gray-200 rounded-xl p-6 min-w-[320px] max-w-[380px] mx-3 flex-shrink-0 border-l-4 border-primary/50 transition-all duration-300">
+    <h3 className="text-primary font-bold text-lg mb-3 text-center italic">{title}</h3>
+    <p className="text-foreground/70 text-sm text-center leading-relaxed">{text}</p>
+    <div className="flex items-center gap-2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 max-h-0 group-hover:max-h-20 overflow-hidden">
+      <div className="w-8 h-8 rounded-full bg-primary" />
+      <span className="text-primary font-medium text-sm">{author}</span>
+      <ExternalLink className="w-4 h-4 text-muted-foreground" />
+    </div>
   </div>
 );
 
@@ -68,7 +66,7 @@ const TestimonialsSection = () => {
         <div className="overflow-hidden">
           <div className="flex animate-marquee-left">
             {[...bottomRow, ...bottomRow, ...bottomRow, ...bottomRow].map((testimonial, index) => (
-              <TestimonialCard key={`bottom-${index}`} {...testimonial} showAuthor={index === 0 || index === 3} />
+              <TestimonialCard key={`bottom-${index}`} {...testimonial} />
             ))}
           </div>
         </div>
