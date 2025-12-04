@@ -180,20 +180,19 @@
 }
 
 .animate-marquee-right {
-  animation: marquee-right 30s linear infinite;
+  animation: marquee-right 40s linear infinite;
+  transition: animation-play-state 0.3s ease;
 }
 
 .animate-marquee-left {
-  animation: marquee-left 30s linear infinite;
+  animation: marquee-left 40s linear infinite;
+  transition: animation-play-state 0.3s ease;
 }
 
-/* Slow down marquee on hover (10x slower) */
-.marquee-container:hover .animate-marquee-right {
-  animation-duration: 300s;
-}
-
+/* Pause marquee on hover for reading */
+.marquee-container:hover .animate-marquee-right,
 .marquee-container:hover .animate-marquee-left {
-  animation-duration: 300s;
+  animation-play-state: paused;
 }
 
 /* Fade in animation */
