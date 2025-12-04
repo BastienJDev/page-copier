@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logoEasySeo from "@/assets/logo_easy_seo.png";
 
 const Header = () => {
   return (
@@ -6,9 +7,8 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between" aria-label="Navigation principale">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2" aria-label="Easy-Seo Agency - Accueil">
-            <span className="text-2xl font-bold text-primary">Easy-Seo</span>
-            <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider">Agency</span>
+          <a href="/" aria-label="Easy-Seo Agency - Accueil">
+            <img src={logoEasySeo} alt="Easy-Seo Agency" className="h-10" />
           </a>
 
           {/* Navigation Links */}
