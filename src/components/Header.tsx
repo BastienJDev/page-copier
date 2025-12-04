@@ -26,7 +26,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <button 
-            className="text-white text-[14px] font-normal px-6 py-2.5 rounded-full transition-all duration-150 shadow-[4px_6px_0_#2d4a7c] hover:shadow-none hover:translate-x-1 hover:translate-y-1.5"
+            className="text-white text-[17px] font-normal px-6 py-2.5 rounded-full transition-all duration-150 shadow-[4px_6px_0_#2d4a7c] hover:shadow-none hover:translate-x-1 hover:translate-y-1.5"
             style={{ 
               fontFamily: "'Varela Round', sans-serif",
               background: 'linear-gradient(110deg, #4885f4 0%, #44609e 100%)'
