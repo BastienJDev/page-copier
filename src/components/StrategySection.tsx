@@ -42,11 +42,8 @@ const StrategySection = () => {
         {/* Badge */}
         <div className="flex justify-center mb-8">
           <span 
-            className="inline-block px-6 py-2 rounded-full bg-white text-[16px] font-normal border-[1px] border-[#587cca] shadow-[1px_2px_5px_1px_#527bd5] transition-all duration-150 hover:shadow-none hover:translate-x-[1px] hover:translate-y-[2px] cursor-pointer"
-            style={{ 
-              fontFamily: "'Varela Round', sans-serif", 
-              color: '#4885f4'
-            }}
+            className="inline-block px-6 py-2 rounded-full bg-white text-[16px] font-normal border-[1px] border-[#587cca] shadow-[1px_2px_5px_1px_#527bd5] transition-all duration-150 hover:shadow-none hover:translate-x-[1px] hover:translate-y-[2px] cursor-pointer font-exo"
+            style={{ color: '#527bd5' }}
           >
             Besoin d'une stratégie de référencement ?
           </span>
