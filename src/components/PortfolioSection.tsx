@@ -204,14 +204,16 @@ const PortfolioSection = () => {
           </div>
         </div>
 
-        {/* CTA Button */}
         <div className="text-center mt-12">
-          <Button 
-            size="xl" 
-            className="bg-[#4A5568] hover:bg-[#3D4654] text-white rounded-full px-10"
+          <button 
+            className="text-white text-[18px] font-bold px-10 py-4 rounded-[18px] transition-all duration-150 shadow-[4px_6px_0_#2d4a7c] hover:shadow-none hover:translate-x-1 hover:translate-y-1.5"
+            style={{ 
+              fontFamily: "'Varela Round', sans-serif",
+              background: 'linear-gradient(110deg, #4885f4 0%, #44609e 100%)'
+            }}
           >
             Nos accompagnements
-          </Button>
+          </button>
         </div>
       </div>
     </section>
