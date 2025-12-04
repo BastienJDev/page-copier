@@ -8,7 +8,7 @@ const Header = () => {
         <nav className="flex items-center justify-between" aria-label="Navigation principale">
           {/* Logo */}
           <a href="/" aria-label="Easy-Seo Agency - Accueil">
-            <img src={logoEasySeo} alt="Easy-Seo Agency" className="h-12" />
+            <img src={logoEasySeo} alt="Easy-Seo Agency" className="h-14" />
           </a>
 
           {/* Navigation Links */}
