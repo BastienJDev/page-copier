@@ -59,7 +59,7 @@ const StrategySection = () => {
         </div>
 
         {/* Subtitle */}
-        <p className="text-center max-w-2xl mx-auto mb-12 text-[16px] font-normal" style={{ fontFamily: "'Varela Round', sans-serif", color: '#161b33' }}>
+        <p className="text-center mx-auto mb-12 text-[16px] font-normal whitespace-nowrap" style={{ fontFamily: "'Varela Round', sans-serif", color: '#161b33' }}>
           Une méthode sur-mesure qui s'aligne aux exigences de Google et aux objectifs de votre business.
         </p>
 
