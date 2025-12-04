@@ -59,7 +59,7 @@ const AnimatedNumber = ({ prefix, value, suffix, duration = 2000 }: { prefix: st
   }, [value, duration, hasAnimated]);
 
   return (
-    <div ref={ref} className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-2">
+    <div ref={ref} className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-2" style={{ fontFamily: "'Varela Round', sans-serif" }}>
       {prefix} {count}{suffix}
     </div>
   );
@@ -67,14 +67,14 @@ const AnimatedNumber = ({ prefix, value, suffix, duration = 2000 }: { prefix: st
 
 const StatsSection = () => {
   return (
-    <section className="bg-blue-section py-10" aria-label="Statistiques de performance SEO">
+    <section className="bg-gradient-to-b from-[#4A90D9] to-[#5B9FE8] py-10" aria-label="Statistiques de performance SEO">
       <div className="container mx-auto px-6">
         <h2 className="sr-only">Nos résultats SEO en chiffres</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <article key={index} className="text-center">
               <AnimatedNumber prefix={stat.prefix} value={stat.value} suffix={stat.suffix} />
-              <p className="text-primary-foreground/80 text-lg font-bold">
+              <p className="text-primary-foreground/80 text-lg font-bold" style={{ fontFamily: "'Varela Round', sans-serif" }}>
                 {stat.label}
               </p>
             </article>
