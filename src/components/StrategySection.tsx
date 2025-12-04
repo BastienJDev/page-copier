@@ -46,7 +46,7 @@ const StrategySection = () => {
             style={{ background: 'linear-gradient(110deg, #4885f4 0%, #44609e 100%)' }}
           >
             <span 
-              className="inline-block px-6 py-2 rounded-full bg-white text-[17px] font-normal"
+              className="inline-block px-6 py-2 rounded-full bg-white text-[16px] font-normal"
               style={{ fontFamily: "'Varela Round', sans-serif", color: '#4885f4' }}
             >
               Besoin d'une stratégie de référencement ?
