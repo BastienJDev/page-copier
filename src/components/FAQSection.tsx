@@ -82,7 +82,7 @@ const FAQSection = () => {
         </div>
 
         {/* Subtitle */}
-        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
+        <p className="text-center mx-auto mb-12 text-[16px] font-normal whitespace-nowrap" style={{ fontFamily: "'Varela Round', sans-serif", color: '#161b33' }}>
           Retrouvez les réponses aux questions les plus fréquentes sur nos services de référencement naturel.
         </p>
 
