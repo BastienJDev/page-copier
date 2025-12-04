@@ -52,7 +52,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-[#4A90D9] to-[#5B9FE8] overflow-hidden">
-      <div className="relative">
+      <div className="relative marquee-container">
         {/* Top row - scrolls right */}
         <div className="mb-6 overflow-hidden">
           <div className="flex animate-marquee-right">
