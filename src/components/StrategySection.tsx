@@ -41,9 +41,17 @@ const StrategySection = () => {
       <div className="container mx-auto">
         {/* Badge */}
         <div className="flex justify-center mb-8">
-          <span className="inline-block px-6 py-2 rounded-full border border-primary/30 text-primary text-sm font-medium">
-            Notre méthodologie SEO
-          </span>
+          <div 
+            className="inline-block p-[2px] rounded-full shadow-[4px_6px_0_#2d4a7c]"
+            style={{ background: 'linear-gradient(110deg, #4885f4 0%, #44609e 100%)' }}
+          >
+            <span 
+              className="inline-block px-6 py-2 rounded-full bg-white text-[17px] font-normal"
+              style={{ fontFamily: "'Varela Round', sans-serif", color: '#4885f4' }}
+            >
+              Besoin d'une stratégie de référencement ?
+            </span>
+          </div>
         </div>
 
         {/* Title */}
