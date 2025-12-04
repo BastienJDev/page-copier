@@ -56,7 +56,7 @@ const PortfolioSection = () => {
         </div>
 
         {/* Subtitle */}
-        <p className="text-muted-foreground text-center mx-auto mb-12 whitespace-nowrap">
+        <p className="text-center mx-auto mb-12 whitespace-nowrap" style={{ fontFamily: "'Varela Round', sans-serif", fontWeight: 400, color: '#161b33' }}>
           Découvrez les projets que nous avons accompagnés vers le succès grâce à notre expertise SEO.
         </p>
 
