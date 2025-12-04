@@ -54,8 +54,8 @@ const TestimonialsSection = () => {
     <section className="py-20 bg-gradient-to-b from-[#4A90D9] to-[#5B9FE8] overflow-hidden">
       <div className="relative marquee-container">
         {/* Top row - scrolls right */}
-        <div className="mb-6 overflow-hidden">
-          <div className="flex animate-marquee-right">
+        <div className="group/top mb-6 overflow-hidden">
+          <div className="flex animate-marquee-right group-hover/top:[animation-play-state:paused]">
             {[...topRow, ...topRow, ...topRow, ...topRow].map((testimonial, index) => (
               <TestimonialCard key={`top-${index}`} {...testimonial} />
             ))}
@@ -63,8 +63,8 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Bottom row - scrolls left */}
-        <div className="overflow-hidden">
-          <div className="flex animate-marquee-left">
+        <div className="group/bottom overflow-hidden">
+          <div className="flex animate-marquee-left group-hover/bottom:[animation-play-state:paused]">
             {[...bottomRow, ...bottomRow, ...bottomRow, ...bottomRow].map((testimonial, index) => (
               <TestimonialCard key={`bottom-${index}`} {...testimonial} />
             ))}
