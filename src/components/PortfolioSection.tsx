@@ -48,10 +48,10 @@ const PortfolioSection = () => {
 
         {/* Title */}
         <div className="text-center mb-6">
-          <h2 id="portfolio-title" className="text-3xl md:text-4xl lg:text-5xl font-bold">
-            <span className="text-foreground">Des résultats,</span>
+          <h2 id="portfolio-title">
+            <span className="text-[32px] font-black" style={{ fontFamily: "'Lato', sans-serif", color: '#161b33' }}>Des résultats,</span>
             <br />
-            <span className="text-gradient">Pas des promesses.</span>
+            <span className="font-exo font-semibold text-[32px]" style={{ background: 'linear-gradient(90deg, #44609e 0%, #4885f4 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Pas des promesses.</span>
           </h2>
         </div>
 
