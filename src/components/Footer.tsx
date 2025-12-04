@@ -102,37 +102,6 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="bg-[#1E2A3B] py-6">
         <div className="container mx-auto px-6">
-          {/* Payment Icons */}
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="bg-blue-900 rounded px-2 py-1.5 flex items-center gap-1">
-              <span className="text-[10px] text-white">FRANCE</span>
-              <span className="text-[10px] text-green-400">VERIF</span>
-            </div>
-            <div className="bg-white rounded px-3 py-1.5">
-              <span className="text-xs font-bold text-blue-800">VISA</span>
-            </div>
-            <div className="bg-white rounded px-2 py-1.5 flex">
-              <div className="w-4 h-4 bg-red-500 rounded-full -mr-1"></div>
-              <div className="w-4 h-4 bg-yellow-500 rounded-full"></div>
-            </div>
-            <div className="bg-[#016FD0] rounded px-2 py-1.5">
-              <span className="text-[10px] font-bold text-white">AMEX</span>
-            </div>
-            <div className="bg-[#003087] rounded px-2 py-1.5">
-              <span className="text-[10px] font-bold text-white">Pay</span>
-              <span className="text-[10px] font-bold text-[#009CDE]">Pal</span>
-            </div>
-            <div className="bg-black rounded px-2 py-1.5">
-              <span className="text-[10px] font-bold text-white">Pay</span>
-            </div>
-            <div className="bg-white rounded px-2 py-1.5">
-              <span className="text-[10px] font-bold text-gray-800">G Pay</span>
-            </div>
-            <div className="bg-[#005498] rounded px-2 py-1.5">
-              <span className="text-[10px] font-bold text-white">BC</span>
-            </div>
-          </div>
-
           {/* Copyright */}
           <p className="text-center text-gray-400 text-sm mb-3">
             © 2025, SWEET COMMERCE - 25 rue de Ponthieu 75008 Paris
