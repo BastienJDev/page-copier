@@ -15,8 +15,8 @@ const HeroSection = () => {
         </div>
 
         {/* Subtitle */}
-        <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8 opacity-0 animate-fade-in-up animation-delay-200" style={{ animationFillMode: 'forwards' }}>
-          Easy-Seo est une agence 100% spécialisée en référencement naturel. Nous construisons des stratégies SEO sur-mesure, performantes et durables.
+        <p className="text-[16px] max-w-2xl mx-auto mb-8 opacity-0 animate-fade-in-up animation-delay-200" style={{ animationFillMode: 'forwards', fontFamily: "'Varela Round', sans-serif", fontWeight: 400, color: '#161b33' }}>
+          Easy-Seo est une agence 100 % spécialisée en référencement naturel. Nous construisons des stratégies SEO sur-mesure, performantes et durables.
         </p>
 
         {/* CTA Button */}
