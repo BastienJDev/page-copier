@@ -54,7 +54,7 @@ const StrategySection = () => {
           <h2 id="strategy-title">
             <span className="text-foreground font-exo font-semibold text-[32px]">Pensée pour Google,</span>
             <br />
-            <span className="text-gradient">Conçue pour vous.</span>
+            <span className="font-exo font-semibold text-[32px]" style={{ background: 'linear-gradient(90deg, #44609e 0%, #4885f4 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Conçue pour vous.</span>
           </h2>
         </div>
 
