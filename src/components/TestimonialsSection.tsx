@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
   const bottomRow = testimonials.slice(3, 6);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-[#4A90D9] to-[#5B9FE8] overflow-hidden">
+    <section className="py-12 bg-gradient-to-b from-[#4A90D9] to-[#5B9FE8] overflow-hidden">
       <div className="relative marquee-container">
         {/* Top row - scrolls right */}
         <div className="group/top mb-6 overflow-hidden">
@@ -70,17 +70,6 @@ const TestimonialsSection = () => {
             ))}
           </div>
         </div>
-      </div>
-
-      {/* CTA Button */}
-      <div className="text-center mt-20">
-        <Button 
-          variant="outline" 
-          size="xl" 
-          className="bg-gray-100 border-gray-200 text-foreground hover:bg-gray-200"
-        >
-          Voir tous les avis
-        </Button>
       </div>
     </section>
   );
