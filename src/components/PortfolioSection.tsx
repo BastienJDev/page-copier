@@ -56,7 +56,7 @@ const PortfolioSection = () => {
         </div>
 
         {/* Subtitle */}
-        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
+        <p className="text-muted-foreground text-center mx-auto mb-12 whitespace-nowrap">
           Découvrez les projets que nous avons accompagnés vers le succès grâce à notre expertise SEO.
         </p>
 
