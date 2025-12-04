@@ -22,11 +22,10 @@ const HeroSection = () => {
         {/* CTA Button */}
         <div className="mb-16 opacity-0 animate-fade-in-up animation-delay-400" style={{ animationFillMode: 'forwards' }}>
           <button 
-            className="text-white text-[18px] font-normal px-10 py-4 rounded-full transition-all duration-150 hover:translate-y-0.5 hover:shadow-[0_4px_0_#2d4a7c]"
+            className="text-white text-[18px] font-normal px-10 py-4 rounded-full transition-all duration-150 shadow-[4px_6px_0_#2d4a7c] hover:shadow-none hover:translate-x-1 hover:translate-y-1.5"
             style={{ 
               fontFamily: "'Varela Round', sans-serif",
-              background: 'linear-gradient(110deg, #4885f4 0%, #44609e 100%)',
-              boxShadow: '0 6px 0 #2d4a7c'
+              background: 'linear-gradient(110deg, #4885f4 0%, #44609e 100%)'
             }}
             aria-label="Recevoir mon audit SEO gratuit"
           >
