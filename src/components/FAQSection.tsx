@@ -29,7 +29,7 @@ const faqs = [
     answer: "Oui, nous intervenons sur tous types de profils Google Business : commerces, restaurants, professions libérales, entreprises de services, etc. Chaque stratégie est adaptée à votre secteur.",
   },
   {
-    question: "Comment fonctionne la collaboration avec <span class='text-primary'>MAVIZ</span>?",
+    question: "Comment fonctionne la collaboration avec <span class='text-accent'>MAVIZ</span>?",
     answer: "Notre collaboration commence par un audit complet, suivi d'un plan d'action personnalisé. Vous bénéficiez d'un suivi mensuel avec des rapports détaillés et un interlocuteur dédié.",
     hasHtml: true,
   },
