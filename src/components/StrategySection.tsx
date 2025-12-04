@@ -51,8 +51,8 @@ const StrategySection = () => {
 
         {/* Title */}
         <div className="text-center mb-6">
-          <h2 id="strategy-title" className="text-3xl md:text-4xl lg:text-5xl font-bold">
-            <span className="text-foreground">Pensée pour Google,</span>
+          <h2 id="strategy-title">
+            <span className="text-foreground font-exo font-semibold text-[32px]">Pensée pour Google,</span>
             <br />
             <span className="text-gradient">Conçue pour vous.</span>
           </h2>
