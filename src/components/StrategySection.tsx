@@ -37,7 +37,7 @@ const StrategySection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-20 px-6 bg-background" id="services" aria-labelledby="strategy-title">
+    <section className="pt-10 pb-20 px-6 bg-background" id="services" aria-labelledby="strategy-title">
       <div className="container mx-auto">
         {/* Badge */}
         <div className="flex justify-center mb-8">
