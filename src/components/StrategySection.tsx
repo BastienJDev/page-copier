@@ -42,7 +42,7 @@ const StrategySection = () => {
         {/* Badge */}
         <div className="flex justify-center mb-8">
           <span 
-            className="inline-block px-6 py-2 rounded-full bg-white text-[16px] font-normal border border-[#587cca] transition-all duration-150 hover:shadow-none hover:translate-x-[1px] hover:translate-y-[2px] cursor-pointer"
+            className="inline-block px-6 py-2 rounded-full bg-white text-[16px] font-normal border-[1px] border-[#587cca] transition-all duration-150 hover:shadow-none hover:translate-x-[1px] hover:translate-y-[2px] cursor-pointer"
             style={{ 
               fontFamily: "'Varela Round', sans-serif", 
               color: '#4885f4',
