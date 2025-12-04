@@ -3,7 +3,7 @@ import logoEasySeoWhite from "@/assets/logo_easy_seo_white.png";
 
 const Footer = () => {
   return (
-    <footer style={{ background: 'linear-gradient(90deg, #111827 0%, #44609e 100%)' }}>
+    <footer style={{ background: 'linear-gradient(180deg, #44609e 0%, #111827 100%)' }}>
       {/* Main Footer */}
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
