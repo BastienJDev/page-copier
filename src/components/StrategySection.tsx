@@ -78,7 +78,7 @@ const StrategySection = () => {
                   key={index}
                   onMouseEnter={() => setHoveredIndex(index)}
                   className={`relative p-6 flex flex-col cursor-pointer transition-all duration-300 ${
-                    isHovered ? "bg-primary/5 scale-105 z-10" : hasHover ? "scale-95 opacity-70" : ""
+                    isHovered ? "bg-primary/5 z-10" : hasHover ? "opacity-70" : ""
                   } ${
                     index < services.length - 1 ? "lg:border-r border-primary/20" : ""
                   } ${index < 2 ? "md:border-b lg:border-b-0 border-primary/20" : ""}`}
