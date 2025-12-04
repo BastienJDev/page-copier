@@ -206,7 +206,7 @@ const PortfolioSection = () => {
 
         <div className="text-center mt-12">
           <button 
-            className="text-white text-[18px] font-bold px-10 py-4 rounded-[18px] transition-all duration-150 shadow-[4px_6px_0_#2d4a7c] hover:shadow-none hover:translate-x-1 hover:translate-y-1.5"
+            className="text-white text-[18px] font-bold px-10 py-4 rounded-[18px] transition-all duration-150 shadow-[4px_6px_0_#2d4a7c] hover:shadow-none hover:translate-x-1 hover:translate-y-1.5 border-[0.8px] border-[#161b33]"
             style={{ 
               fontFamily: "'Varela Round', sans-serif",
               background: 'linear-gradient(110deg, #4885f4 0%, #44609e 100%)'
