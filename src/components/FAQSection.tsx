@@ -74,10 +74,10 @@ const FAQSection = () => {
 
         {/* Title */}
         <div className="text-center mb-6">
-          <h2 id="faq-title" className="text-3xl md:text-4xl lg:text-5xl font-bold">
-            <span className="text-foreground">Vos questions,</span>
+          <h2 id="faq-title">
+            <span className="text-[32px] font-black" style={{ fontFamily: "'Lato', sans-serif", color: '#161b33' }}>Vos questions,</span>
             <br />
-            <span className="text-gradient">Nos réponses.</span>
+            <span className="font-exo font-semibold text-[32px]" style={{ background: 'linear-gradient(90deg, #44609e 0%, #4885f4 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Nos réponses.</span>
           </h2>
         </div>
 
