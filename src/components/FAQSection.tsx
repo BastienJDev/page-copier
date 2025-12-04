@@ -123,7 +123,7 @@ const FAQSection = () => {
 
         {/* Expanded Content */}
         {isExpanded && (
-          <div className="max-w-4xl mx-auto mt-20 animate-fade-in">
+          <div className="w-[80%] mx-auto mt-20 animate-fade-in">
             <div className="bg-slate-50 rounded-2xl p-8 space-y-8">
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
