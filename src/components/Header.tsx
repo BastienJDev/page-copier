@@ -13,13 +13,13 @@ const Header = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8" role="navigation">
-            <a href="#services" className="text-primary font-medium hover:text-primary/80 transition-colors">
+            <a href="#services" className="text-primary font-exo font-extrabold hover:text-primary/80 transition-colors">
               Services
             </a>
-            <a href="#realisations" className="text-primary font-medium hover:text-primary/80 transition-colors">
+            <a href="#realisations" className="text-primary font-exo font-extrabold hover:text-primary/80 transition-colors">
               Réalisations
             </a>
-            <a href="#recrutement" className="text-primary font-medium hover:text-primary/80 transition-colors">
+            <a href="#recrutement" className="text-primary font-exo font-extrabold hover:text-primary/80 transition-colors">
               Recrutement
             </a>
           </div>
