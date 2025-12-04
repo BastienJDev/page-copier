@@ -12,14 +12,14 @@ const Header = () => {
           </a>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-8" role="navigation">
-            <a href="#services" className="text-primary font-exo font-extrabold hover:text-primary/80 transition-colors">
+          <div className="hidden md:flex items-center gap-12" role="navigation">
+            <a href="#services" className="text-[#3898ec] font-exo font-extrabold text-lg hover:text-[#3898ec]/80 transition-colors">
               Services
             </a>
-            <a href="#realisations" className="text-primary font-exo font-extrabold hover:text-primary/80 transition-colors">
+            <a href="#realisations" className="text-[#3898ec] font-exo font-extrabold text-lg hover:text-[#3898ec]/80 transition-colors">
               Réalisations
             </a>
-            <a href="#recrutement" className="text-primary font-exo font-extrabold hover:text-primary/80 transition-colors">
+            <a href="#recrutement" className="text-[#3898ec] font-exo font-extrabold text-lg hover:text-[#3898ec]/80 transition-colors">
               Recrutement
             </a>
           </div>
