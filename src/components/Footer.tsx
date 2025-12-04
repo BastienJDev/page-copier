@@ -2,7 +2,7 @@ import { Facebook, Instagram, Youtube, Star } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1E2A3B]">
+    <footer style={{ background: 'linear-gradient(90deg, #111827 0%, #44609e 100%)' }}>
       {/* Main Footer */}
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
@@ -100,7 +100,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="bg-[#1E2A3B] py-6">
+      <div className="py-6">
         <div className="container mx-auto px-6">
           {/* Copyright */}
           <p className="text-center text-gray-400 text-sm mb-3">
