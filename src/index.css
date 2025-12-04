@@ -189,11 +189,7 @@
   transition: animation-play-state 0.3s ease;
 }
 
-/* Pause marquee on hover for reading */
-.marquee-container:hover .animate-marquee-right,
-.marquee-container:hover .animate-marquee-left {
-  animation-play-state: paused;
-}
+/* Pause removed - each row pauses independently via group-hover in component */
 
 /* Fade in animation */
 @keyframes fadeInUp {
