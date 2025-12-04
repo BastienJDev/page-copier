@@ -67,7 +67,7 @@ const AnimatedNumber = ({ prefix, value, suffix, duration = 2000 }: { prefix: st
 
 const StatsSection = () => {
   return (
-    <section className="bg-gradient-to-b from-[#4A90D9] to-[#5B9FE8] py-10" aria-label="Statistiques de performance SEO">
+    <section className="py-10" style={{ background: 'linear-gradient(110deg, rgb(72, 133, 244) 0%, rgb(68, 96, 158) 100%)' }} aria-label="Statistiques de performance SEO">
       <div className="container mx-auto px-6">
         <h2 className="sr-only">Nos résultats SEO en chiffres</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
