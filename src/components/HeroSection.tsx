@@ -21,35 +21,9 @@ const HeroSection = () => {
 
         {/* CTA Button */}
         <div className="mb-16 opacity-0 animate-fade-in-up animation-delay-400" style={{ animationFillMode: 'forwards' }}>
-          <div className="relative inline-block group">
-            {/* Full border (revealed on hover) */}
-            <div className="absolute -inset-[2px] rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
-            {/* Animated border - SVG following pill shape */}
-            <svg 
-              className="absolute -inset-[2px] w-[calc(100%+4px)] h-[calc(100%+4px)] group-hover:opacity-0 transition-opacity duration-300"
-              viewBox="0 0 300 60"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-            >
-              <rect
-                x="2"
-                y="2"
-                width="296"
-                height="56"
-                rx="28"
-                ry="28"
-                fill="none"
-                stroke="hsl(var(--accent))"
-                strokeWidth="3"
-                strokeDasharray="50 600"
-                strokeLinecap="round"
-                className="animate-dash-rotate"
-              />
-            </svg>
-            <Button variant="hero" size="xl" className="relative" aria-label="Recevoir mon audit SEO gratuit">
-              Recevoir mon audit SEO
-            </Button>
-          </div>
+          <Button variant="hero" size="xl" aria-label="Recevoir mon audit SEO gratuit">
+            Recevoir mon audit SEO
+          </Button>
         </div>
 
         {/* Video Section */}
