@@ -106,7 +106,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="py-3">
+      <div className="py-1">
         <div className="container mx-auto px-6">
           {/* Copyright */}
           <p className="text-center text-gray-400 text-sm mb-3">
