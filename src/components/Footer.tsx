@@ -27,7 +27,7 @@ const Footer = () => {
           {/* À propos Column */}
           <div className="lg:col-span-2">
             <h4 className="text-xl font-semibold text-white mb-6 underline underline-offset-8 decoration-2">À propos</h4>
-            <ul className="space-y-5">
+            <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Notre histoire</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Témoignages</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Nos agences</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
           {/* Services Column */}
           <div className="lg:col-span-2">
             <h4 className="text-xl font-semibold text-white mb-6 underline underline-offset-8 decoration-2">Services</h4>
-            <ul className="space-y-5">
+            <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Audit SEO</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Refonte SEO</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Rédaction SEO</a></li>
@@ -49,7 +49,7 @@ const Footer = () => {
           {/* Supports Column */}
           <div className="lg:col-span-3">
             <h4 className="text-xl font-semibold text-white mb-6 underline underline-offset-8 decoration-2">Supports</h4>
-            <ul className="space-y-5">
+            <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Formations</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Outils SEO</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">FAQ</a></li>
