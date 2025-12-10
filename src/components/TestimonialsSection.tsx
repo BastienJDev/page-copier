@@ -51,11 +51,11 @@ const TestimonialsSection = () => {
   const bottomRow = testimonials.slice(3, 6);
 
   return (
-    <section className="py-12 bg-gradient-to-b from-[#4A90D9] to-[#5B9FE8] overflow-hidden">
+    <section className="py-12 overflow-hidden" style={{ background: 'linear-gradient(172deg, #4885f4 0%, #44609e 100%)' }}>
       <div className="relative marquee-container">
         {/* Top row - scrolls right */}
         <div className="group/top mb-6 overflow-hidden">
-          <div className="flex animate-marquee-right group-hover/top:[animation-play-state:paused]">
+          <div className="flex animate-marquee-right group-hover/top:[animation-duration:60s]">
             {[...topRow, ...topRow, ...topRow, ...topRow].map((testimonial, index) => (
               <TestimonialCard key={`top-${index}`} {...testimonial} />
             ))}
@@ -64,7 +64,7 @@ const TestimonialsSection = () => {
 
         {/* Bottom row - scrolls left */}
         <div className="group/bottom overflow-hidden">
-          <div className="flex animate-marquee-left group-hover/bottom:[animation-play-state:paused]">
+          <div className="flex animate-marquee-left group-hover/bottom:[animation-duration:60s]">
             {[...bottomRow, ...bottomRow, ...bottomRow, ...bottomRow].map((testimonial, index) => (
               <TestimonialCard key={`bottom-${index}`} {...testimonial} />
             ))}

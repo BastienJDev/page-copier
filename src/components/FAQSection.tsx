@@ -65,7 +65,7 @@ const FAQSection = () => {
         {/* Badge */}
         <div className="flex justify-center mb-8">
           <span 
-            className="inline-block px-6 py-2 rounded-full bg-white text-[16px] font-normal border-[1px] border-[#587cca] shadow-[1px_2px_5px_1px_#527bd5] transition-all duration-150 hover:shadow-none hover:translate-x-[1px] hover:translate-y-[2px] cursor-pointer font-exo"
+            className="inline-block px-6 py-2 rounded-[8px] bg-white text-[16px] font-normal border-[1px] border-[#587cca] shadow-[1px_2px_5px_1px_#527bd5] transition-all duration-150 hover:shadow-none hover:translate-x-[1px] hover:translate-y-[2px] cursor-pointer font-exo"
             style={{ color: '#527bd5' }}
           >
             Questions fréquentes sur le SEO
@@ -82,14 +82,14 @@ const FAQSection = () => {
         </div>
 
         {/* Subtitle */}
-        <p className="text-center mx-auto mb-12 text-[16px] font-normal whitespace-nowrap" style={{ fontFamily: "'Varela Round', sans-serif", color: '#161b33' }}>
+        <p className="text-center mx-auto mb-12 text-[16px] font-normal" style={{ fontFamily: "'Varela', sans-serif", color: '#161b33' }}>
           Retrouvez les réponses aux questions les plus fréquentes sur nos services de référencement naturel.
         </p>
 
         {/* FAQ Accordion */}
         <div className="max-w-3xl mx-auto relative">
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
-            <Accordion type="single" collapsible className="space-y-2">
+            <Accordion type="single" collapsible className="space-y-0">
               {faqs.map((faq, index) => (
                 <AccordionItem 
                   key={index} 

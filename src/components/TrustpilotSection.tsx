@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, Star, Check } from "lucide-react";
 
 const reviews = [
@@ -43,18 +43,28 @@ const StarRating = ({ filled = 5 }: { filled?: number }) => (
 );
 
 const TrustpilotSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const slides = Array.from({ length: Math.ceil(reviews.length / 2) }, (_, i) =>
+    reviews.slice(i * 2, i * 2 + 2)
+  );
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % reviews.length);
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
+  useEffect(() => {
+    const interval = setInterval(nextSlide, isHovered ? 5000 : 2000);
+    return () => clearInterval(interval);
+  }, [isHovered, slides.length]);
+
   return (
-    <section className="py-20 px-6 bg-background">
+    <section className="py-10 px-6 bg-background">
       <div className="container mx-auto">
         {/* Trustpilot Header */}
         <div className="text-center mb-8">
@@ -75,11 +85,15 @@ const TrustpilotSection = () => {
         </div>
 
         {/* Reviews Carousel */}
-        <div className="relative max-w-5xl mx-auto">
+        <div
+          className="relative max-w-5xl mx-auto overflow-hidden"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full border border-gray-200 bg-white flex items-center justify-center hover:bg-gray-50 transition-colors"
+            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full border border-gray-200 bg-white items-center justify-center hover:bg-gray-50 transition-colors"
             aria-label="Avis précédent"
           >
             <ChevronLeft className="w-5 h-5 text-gray-400" />
@@ -87,30 +101,39 @@ const TrustpilotSection = () => {
 
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full border border-gray-200 bg-white flex items-center justify-center hover:bg-gray-50 transition-colors"
+            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full border border-gray-200 bg-white items-center justify-center hover:bg-gray-50 transition-colors"
             aria-label="Avis suivant"
           >
             <ChevronRight className="w-5 h-5 text-gray-400" />
           </button>
 
-          {/* Reviews Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {reviews.map((review, index) => (
-              <div key={index} className="bg-white border border-gray-100 rounded-lg p-4 shadow-sm">
-                <div className="flex items-center justify-between mb-3">
-                  <StarRating />
-                  {review.verified && (
-                    <div className="flex items-center gap-1 text-gray-500 text-xs">
-                      <Check className="w-3 h-3" />
-                      <span>Vérifié</span>
+          {/* Reviews Carousel */}
+          <div
+            className="flex transition-transform duration-500 ease-out"
+            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          >
+            {slides.map((pair, slideIdx) => (
+              <div key={slideIdx} className="min-w-full px-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {pair.map((review, idx) => (
+                    <div key={idx} className="bg-white border border-gray-100 rounded-lg p-4 shadow-sm h-full">
+                      <div className="flex items-center justify-between mb-3">
+                        <StarRating />
+                        {review.verified && (
+                          <div className="flex items-center gap-1 text-gray-500 text-xs">
+                            <Check className="w-3 h-3" />
+                            <span>Vérifié</span>
+                          </div>
+                        )}
+                      </div>
+                      <h4 className="font-semibold text-foreground text-sm mb-2 line-clamp-1">{review.title}</h4>
+                      <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{review.text}</p>
+                      <div className="text-xs">
+                        <span className="text-primary font-medium">{review.author},</span>
+                        <span className="text-muted-foreground"> {review.date}</span>
+                      </div>
                     </div>
-                  )}
-                </div>
-                <h4 className="font-semibold text-foreground text-sm mb-2 line-clamp-1">{review.title}</h4>
-                <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{review.text}</p>
-                <div className="text-xs">
-                  <span className="text-primary font-medium">{review.author},</span>
-                  <span className="text-muted-foreground"> {review.date}</span>
+                  ))}
                 </div>
               </div>
             ))}

@@ -42,7 +42,7 @@ const StrategySection = () => {
         {/* Badge */}
         <div className="flex justify-center mb-8">
           <span 
-            className="inline-block px-6 py-2 rounded-full bg-white text-[16px] font-normal border-[1px] border-[#587cca] shadow-[1px_2px_5px_1px_#527bd5] transition-all duration-150 hover:shadow-none hover:translate-x-[1px] hover:translate-y-[2px] cursor-pointer font-exo"
+            className="inline-block px-6 py-2 rounded-[8px] bg-white text-[16px] font-normal border-[1px] border-[#587cca] shadow-[1px_2px_5px_1px_#527bd5] transition-all duration-150 hover:shadow-none hover:translate-x-[1px] hover:translate-y-[2px] cursor-pointer font-exo"
             style={{ color: '#527bd5' }}
           >
             Besoin d'une stratégie de référencement ?
@@ -59,7 +59,7 @@ const StrategySection = () => {
         </div>
 
         {/* Subtitle */}
-        <p className="text-center mx-auto mb-12 text-[16px] font-normal whitespace-nowrap" style={{ fontFamily: "'Varela Round', sans-serif", color: '#161b33' }}>
+        <p className="text-center mx-auto mb-12 text-[16px] font-normal" style={{ fontFamily: "'Varela', sans-serif", color: '#161b33' }}>
           Une méthode sur-mesure qui s'aligne aux exigences de Google et aux objectifs de votre business.
         </p>
 
@@ -126,7 +126,7 @@ const StrategySection = () => {
           <button 
             className="text-white text-[18px] font-bold px-10 py-4 rounded-[18px] transition-all duration-150 shadow-[4px_6px_0_#2d4a7c] hover:shadow-none hover:translate-x-1 hover:translate-y-1.5 border-[0.8px] border-[#161b33]"
             style={{ 
-              fontFamily: "'Varela Round', sans-serif",
+              fontFamily: "'Varela', sans-serif",
               background: 'linear-gradient(110deg, #4885f4 0%, #44609e 100%)'
             }}
           >
