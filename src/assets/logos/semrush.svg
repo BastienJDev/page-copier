@@ -1,0 +1,5 @@
+<svg width="200" height="40" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="22" cy="20" r="12" fill="#F55F3D"/>
+  <path d="M18 20L24 14V18H28L22 26V22H18V20Z" fill="#FFFFFF"/>
+  <text x="44" y="25" fill="#1F1F1F" font-family="Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="0.5">SEMRUSH</text>
+</svg>
